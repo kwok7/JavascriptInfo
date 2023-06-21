@@ -30,8 +30,10 @@ if(`str`.includes(`s`,0)){
 //*但是，includes方法只能返回true/false，不能类似于indexOf方法返回具体的位置
 
 //:str.startsWith  && str.endsWith 方法
-console.log(`is Widget starts with empty string?:`+`Widget`.startsWith(``))
-console.log(`is str.startsWith function capital sensitive?: ${!'Widget'.startsWith('wid')}`)
+console.log(`is Widget starts with empty string?:`+`Widget`.startsWith(``)) //true
+console.log(`is str.startsWith function capital sensitive?: ${!'Widget'.startsWith('wid')}`) //!true
+
+//！仔细看这里用了反引号作为模板表达式，里面嵌入了计算，并且结果取反，更符合console.log的内容语义
 
 
 //* important information
